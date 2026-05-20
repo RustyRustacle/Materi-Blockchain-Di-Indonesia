@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INF512 — Blockchain & Indonesia</title>
+<meta name="description" content="Materi Blockchain Fundamentals - Masalah Indonesia & Regulasi Blockchain">
+<link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-glow bg-glow-1"></div>
+<div class="bg-glow bg-glow-2"></div>
+<div class="progress-bar"></div>
+<div class="presentation">
+
+<!-- SLIDE 1: TITLE -->
+<div class="slide title-slide" data-section="intro">
+<div class="slide-inner">
+<div class="eth-diamond"><svg viewBox="0 0 48 48"><path d="M24 4 L44 24 L24 44 L4 24Z" stroke-linejoin="round"/><path d="M24 4 L24 44 M4 24 L44 24" opacity="0.3"/></svg></div>
+<h1 class="animate-in"><span class="gradient-text">Blockchain</span> for Indonesia</h1>
+<p class="lead animate-in delay-1">Real-world problems, potential solutions & the regulatory landscape</p>
+<div class="title-meta animate-in delay-2">
+<span>INF512 Blockchain Fundamentals</span>
+<div class="divider"></div>
+<span>Semester 7 — Informatika UPJ</span>
+<div class="divider"></div>
+<span>90 Minutes</span>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 2: LEARNING OBJECTIVES -->
+<div class="slide" data-section="intro">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Learning Objectives</span>
+<h2 class="animate-in">What We'll <span class="gradient-text">Achieve Today</span></h2>
+<div class="grid-2 animate-in delay-1">
+<div class="card"><span class="card-icon"><i data-lucide="target" class="lucide-icon"></i></span><h3>Identify Problems</h3><p>Mengenali minimal 4 masalah nyata di Indonesia yang relevan dengan solusi blockchain</p></div>
+<div class="card"><span class="card-icon"><i data-lucide="scale" class="lucide-icon"></i></span><h3>Regulatory Landscape</h3><p>Memahami landscape regulasi blockchain Indonesia 2024–2025, termasuk PP 28/2025</p></div>
+<div class="card"><span class="card-icon"><i data-lucide="link" class="lucide-icon"></i></span><h3>Technical Connection</h3><p>Menghubungkan masalah dengan karakteristik blockchain: hashing, desentralisasi, immutability, smart contract</p></div>
+<div class="card"><span class="card-icon"><i data-lucide="lightbulb" class="lucide-icon"></i></span><h3>dApp Project Ideas</h3><p>Mulai berpikir awal tentang ide dApp yang bisa dikembangkan sebagai proyek akhir</p></div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 3: AGENDA -->
+<div class="slide" data-section="intro">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Agenda</span>
+<h2 class="animate-in">Session Structure — <span class="gradient-text">90 Minutes</span></h2>
+<div class="grid-2 animate-in delay-1">
+<div class="card"><span class="card-icon"><i data-lucide="compass" class="lucide-icon"></i></span><h3>A — Context & Foundation</h3><p>Kenapa Indonesia relevan untuk blockchain, bridging ke konsep teknis</p><div class="tag-row"><div class="tag">15 menit</div></div></div>
+<div class="card"><span class="card-icon"><i data-lucide="map-pin" class="lucide-icon"></i></span><h3>B — Indonesia's Problems</h3><p>5 masalah struktural & potensi solusi blockchain untuk masing-masing</p><div class="tag-row"><div class="tag">35 menit</div></div></div>
+<div class="card"><span class="card-icon"><i data-lucide="scroll-text" class="lucide-icon"></i></span><h3>C — Regulatory Framework</h3><p>PP 28/2025, OJK, perpajakan kripto, dan peta regulasi lengkap</p><div class="tag-row"><div class="tag">25 menit</div></div></div>
+<div class="card"><span class="card-icon"><i data-lucide="rocket" class="lucide-icon"></i></span><h3>D — Discussion & Wrap-up</h3><p>Brainstorm ide proyek, framework evaluasi, preview pertemuan berikutnya</p><div class="tag-row"><div class="tag">15 menit</div></div></div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 4: BRIDGING CONCEPTS -->
+<div class="slide" data-section="A">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Segment A — Foundation</span>
+<h2 class="animate-in">Core Concepts <span class="gradient-text">Revisited</span></h2>
+<p class="subtitle animate-in delay-1">Konsep-konsep yang sudah dipelajari — hari ini kita lihat aplikasi nyatanya di Indonesia.</p>
+<div class="concept-row animate-in delay-2">
+<div class="concept-pill"><span class="pill-icon"><i data-lucide="lock" class="lucide-icon-sm"></i></span> Immutability</div>
+<div class="concept-pill"><span class="pill-icon"><i data-lucide="globe" class="lucide-icon-sm"></i></span> Decentralized</div>
+<div class="concept-pill"><span class="pill-icon"><i data-lucide="eye" class="lucide-icon-sm"></i></span> Transparency</div>
+<div class="concept-pill"><span class="pill-icon"><i data-lucide="zap" class="lucide-icon-sm"></i></span> Smart Contract</div>
+</div>
+<div class="quote-block animate-in delay-3">"Hari ini kita akan lihat — teknologi yang sudah kalian pelajari itu menjawab masalah nyata apa di negara kita. Ini penting sebelum kalian mulai memikirkan ide proyek."</div>
+</div>
+</div>
+
+<!-- SLIDE 5: WHY INDONESIA -->
+<div class="slide" data-section="A">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Segment A</span>
+<h2 class="animate-in">Why Indonesia is <span class="gradient-text">Uniquely Relevant</span></h2>
+<div class="grid-3 animate-in delay-1">
+<div class="card card-sm"><span class="card-icon"><i data-lucide="waves" class="lucide-icon"></i></span><h3>17.000+ Islands</h3><p>Koordinasi data antar daerah jadi tantangan besar</p></div>
+<div class="card card-sm"><span class="card-icon"><i data-lucide="users" class="lucide-icon"></i></span><h3>270+ Million People</h3><p>Skala besar, kerawanan penyalahgunaan tinggi</p></div>
+<div class="card card-sm"><span class="card-icon"><i data-lucide="building-2" class="lucide-icon"></i></span><h3>Centralized Bureaucracy</h3><p>Rentan manipulasi dan bottleneck di setiap level</p></div>
+<div class="card card-sm"><span class="card-icon"><i data-lucide="smartphone" class="lucide-icon"></i></span><h3>Digital Growth</h3><p>Penetrasi internet naik, tapi trust terhadap sistem rendah</p></div>
+<div class="card card-sm"><span class="card-icon"><i data-lucide="graduation-cap" class="lucide-icon"></i></span><h3>Youth Dividend</h3><p>SDM muda yang terbuka terhadap teknologi baru</p></div>
+</div>
+<div class="quote-block animate-in delay-2">"Blockchain cocok untuk Indonesia justru karena kondisi kita yang kompleks — banyak pihak, banyak wilayah, banyak kepentingan, sedikit kepercayaan antar aktor. Itulah kenapa <strong>trustless system</strong> relevan."</div>
+</div>
+</div>
+<!-- SLIDE 6: PROBLEM #1 LAND -->
+<div class="slide" data-section="B">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Problem #1</span>
+<h2 class="animate-in">Land Registry <span class="gradient-text">Disputes & Fraud</span></h2>
+<div class="two-col animate-in delay-1">
+<div>
+<div class="stat-row"><div class="stat-item"><div class="stat-number">3.500+</div><div class="stat-label">Kasus sengketa tanah aktif (2024)</div></div></div>
+<ul class="feature-list">
+<li>Sertifikat tanah ganda akibat pencatatan rentan kecacatan data fisik & yuridis</li>
+<li>"Mafia tanah" — kelompok terorganisir memanfaatkan celah administratif</li>
+<li>Data pertanahan terpusat & mudah dimanipulasi oknum dalam</li>
+<li>Tidak ada mekanisme verifikasi silang yang independen</li>
+</ul>
+</div>
+<div>
+<div class="highlight-box"><h3><i data-lucide="link" class="lucide-icon-sm"></i> Blockchain Solution</h3>
+<ul class="feature-list">
+<li>Sertifikat dicatat sebagai token/record yang <strong>immutable</strong></li>
+<li>Setiap perubahan kepemilikan = transaksi baru dengan <strong>timestamp</strong></li>
+<li>Validasi <strong>terdesentralisasi</strong> — bukan hanya di kantor BPN</li>
+<li>Setiap data terhubung ke <strong>hash unik</strong> — pemalsuan sangat sulit</li>
+</ul></div>
+<div class="tag-row"><div class="tag">Immutability</div><div class="tag">Distributed Ledger</div><div class="tag">Timestamp</div></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 7: PROBLEM #1 GLOBAL PROOF -->
+<div class="slide" data-section="B">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Problem #1 — Global Evidence</span>
+<h2 class="animate-in">Land on Blockchain: <span class="gradient-text">Already Proven</span></h2>
+<div class="grid-3 animate-in delay-1">
+<div class="card"><span class="card-icon"><i data-lucide="landmark" class="lucide-icon"></i></span><h3>Dubai, UAE</h3><p>Waktu pengurusan dokumen tanah berkurang dari <strong>2 minggu menjadi beberapa jam</strong> setelah integrasi blockchain untuk seluruh transaksi properti.</p></div>
+<div class="card"><span class="card-icon"><i data-lucide="map" class="lucide-icon"></i></span><h3>Andhra Pradesh, India</h3><p>Menyelesaikan <strong>30.000+ kasus</strong> tumpang tindih tanah dalam kurang dari setahun menggunakan blockchain + GIS.</p></div>
+<div class="card"><span class="card-icon"><i data-lucide="flag" class="lucide-icon"></i></span><h3>Indonesia (In Progress)</h3><p>Digitalisasi buku tanah elektronik melalui sistem Kementerian ATR/BPN — <strong>langkah awal</strong> menuju sertifikat tanah elektronik berbasis blockchain.</p></div>
+</div>
+<div class="discussion-box animate-in delay-2"><h4><i data-lucide="message-circle" class="lucide-icon-xs"></i> Discussion</h4><p>"Kalau kalian mau bikin dApp untuk masalah ini, siapa aktor-aktor yang perlu ada di jaringannya? Apa yang jadi smart contract-nya?"</p></div>
+</div>
+</div>
+
+<!-- SLIDE 8: PROBLEM #2 BANSOS -->
+<div class="slide" data-section="B">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Problem #2</span>
+<h2 class="animate-in">Social Aid <span class="gradient-text">Distribution Leakage</span></h2>
+<div class="two-col animate-in delay-1">
+<div>
+<p class="subtitle">Indonesia mengalokasikan ratusan triliun rupiah/tahun untuk program bantuan sosial (PKH, BPNT, BLT, dll.)</p>
+<ul class="feature-list">
+<li>Data penerima tidak akurat — bansos tidak sampai ke yang berhak</li>
+<li>Pemotongan di tengah jalur distribusi oleh oknum</li>
+<li>Kasus korupsi bansos berulang di berbagai daerah</li>
+<li>Tidak ada mekanisme audit real-time dari masyarakat</li>
+</ul>
+<div class="flow-row" style="margin-top:20px">
+<div class="flow-node">Pusat</div><span class="flow-arrow"><i data-lucide="chevron-right" class="lucide-icon-xs"></i></span>
+<div class="flow-node">Provinsi</div><span class="flow-arrow"><i data-lucide="chevron-right" class="lucide-icon-xs"></i></span>
+<div class="flow-node">Kabupaten</div><span class="flow-arrow"><i data-lucide="chevron-right" class="lucide-icon-xs"></i></span>
+<div class="flow-node">Desa</div><span class="flow-arrow"><i data-lucide="chevron-right" class="lucide-icon-xs"></i></span>
+<div class="flow-node">Penerima</div>
+</div>
+<p style="font-size:0.82rem;color:var(--text-muted);margin-top:4px">Celah korupsi di setiap lapisan distribusi</p>
+</div>
+<div>
+<div class="highlight-box"><h3><i data-lucide="link" class="lucide-icon-sm"></i> Blockchain Solution</h3>
+<ul class="feature-list">
+<li>Data penerima dicatat di blockchain — siapapun (dengan izin) bisa verifikasi</li>
+<li>Distribusi via <strong>tokenized wallet</strong> — token hanya bisa ditukar barang/uang tertentu</li>
+<li>Setiap tahap distribusi = transaksi on-chain — <strong>audit trail</strong> tak bisa dimanipulasi</li>
+<li><strong>Smart contract</strong> otomatis release dana jika kondisi terpenuhi</li>
+</ul></div>
+<div class="tag-row"><div class="tag">Tokenization</div><div class="tag">Smart Contract</div><div class="tag">Audit Trail</div></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 9: PROBLEM #3 SUPPLY CHAIN -->
+<div class="slide" data-section="B">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Problem #3</span>
+<h2 class="animate-in">Supply Chain <span class="gradient-text">& Counterfeit Products</span></h2>
+<div class="two-col animate-in delay-1">
+<div>
+<p class="subtitle">Indonesia — negara agraris dengan rantai distribusi pertanian panjang dan tidak transparan.</p>
+<ul class="feature-list">
+<li>Harga di petani sangat rendah, harga di konsumen sangat tinggi</li>
+<li>Pemalsuan produk: minyak goreng oplosan, beras dicampur, obat palsu</li>
+<li>BPOM kesulitan melacak asal-usul produk yang sudah beredar</li>
+</ul>
+<div class="flow-row" style="margin-top:20px">
+<div class="flow-node"><i data-lucide="sprout" class="lucide-icon-xs"></i> Petani</div><span class="flow-arrow"><i data-lucide="chevron-right" class="lucide-icon-xs"></i></span>
+<div class="flow-node">Pengepul</div><span class="flow-arrow"><i data-lucide="chevron-right" class="lucide-icon-xs"></i></span>
+<div class="flow-node">Distributor</div><span class="flow-arrow"><i data-lucide="chevron-right" class="lucide-icon-xs"></i></span>
+<div class="flow-node">Pasar</div><span class="flow-arrow"><i data-lucide="chevron-right" class="lucide-icon-xs"></i></span>
+<div class="flow-node"><i data-lucide="shopping-cart" class="lucide-icon-xs"></i> Konsumen</div>
+</div>
+</div>
+<div>
+<div class="highlight-box"><h3><i data-lucide="link" class="lucide-icon-sm"></i> Blockchain Solution</h3>
+<ul class="feature-list">
+<li>Setiap lot produk diberi <strong>identitas unik on-chain</strong> sejak dipanen</li>
+<li>Konsumen scan QR — lihat seluruh <strong>journey produk</strong></li>
+<li>Pemalsuan terdeteksi — tidak ada jalur distribusi "gelap"</li>
+<li>Petani mendapat <strong>harga lebih adil</strong> karena transparansi rantai nilai</li>
+</ul></div>
+<div class="tag-row"><div class="tag">Traceability</div><div class="tag">Hash per Lot</div><div class="tag">QR Verification</div></div>
+</div>
+</div>
+<div class="quote-block animate-in delay-2">"Bayangkan beli beras premium di Alfamart. Scan kemasannya — lihat: beras ini dari sawah Pak Budi di Karawang, dipanen tanggal sekian, melewati gudang ini dan itu. Kalau ada titik mencurigakan, sistem otomatis flag."</div>
+</div>
+</div>
+
+<!-- SLIDE 10: PROBLEM #4 PROCUREMENT -->
+<div class="slide" data-section="B">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Problem #4</span>
+<h2 class="animate-in">Government Procurement <span class="gradient-text">Corruption</span></h2>
+<div class="two-col animate-in delay-1">
+<div>
+<p class="subtitle">E-procurement pemerintah = salah satu sektor risiko korupsi tertinggi di Indonesia.</p>
+<ul class="feature-list">
+<li>Manipulasi dokumen tender & kolusi panitia-vendor</li>
+<li>Mark-up harga dan proyek fiktif berulang setiap tahun</li>
+<li>KPK terus menangani kasus pengadaan di semua level pemerintahan</li>
+</ul>
+</div>
+<div>
+<div class="highlight-box"><h3><i data-lucide="link" class="lucide-icon-sm"></i> Blockchain Solution</h3>
+<ul class="feature-list">
+<li>Setiap tahap tender dicatat <strong>on-chain & immutable</strong></li>
+<li>Dokumen penawaran di-<strong>hash</strong> sebelum dibuka — tidak bisa diubah setelah submit</li>
+<li><strong>Smart contract</strong> eksekusi pembayaran hanya jika milestone terverifikasi</li>
+<li>Publik bisa audit setiap transaksi — <strong>radical transparency</strong></li>
+</ul></div>
+<div class="tag-row"><div class="tag">Immutability</div><div class="tag">Smart Contract</div><div class="tag">Public Audit</div></div>
+</div>
+</div>
+<div class="quote-block animate-in delay-2">"Tender proyek jalan 10 miliar. Semua dokumen masuk dalam bentuk hash. Setelah penutupan, hash dibuka di depan semua peserta. Smart contract hanya transfer dana kalau ada bukti progress tervalidasi. <strong>Korupsi di mana?</strong>"</div>
+</div>
+</div>
+<!-- SLIDE 11: PROBLEM #5 IDENTITY -->
+<div class="slide" data-section="B">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Problem #5</span>
+<h2 class="animate-in">Digital Identity & <span class="gradient-text">Credential Fraud</span></h2>
+<div class="two-col animate-in delay-1">
+<div>
+<ul class="feature-list">
+<li>Data kependudukan (NIK, e-KTP) sering bocor — kebocoran data Dukcapil yang masif</li>
+<li>Pemalsuan identitas, SIM ganda, ijazah palsu, sertifikat kompetensi palsu</li>
+<li>Proses verifikasi identitas di layanan publik masih lambat</li>
+</ul>
+<div class="highlight-box"><h3><i data-lucide="shield-check" class="lucide-icon-sm"></i> Solution: Self-Sovereign Identity (SSI)</h3>
+<ul class="feature-list">
+<li>Identitas warga di blockchain — <strong>warga yang kontrol</strong> siapa boleh lihat data apa</li>
+<li>Ijazah, sertifikat, lisensi = <strong>verifiable credential</strong> di blockchain</li>
+<li>Siapapun bisa verifikasi keaslian tanpa kontak institusi penerbit</li>
+<li>Setiap credential terikat ke <strong>hash unik</strong></li>
+</ul></div>
+</div>
+<div>
+<div class="card" style="text-align:center;padding:32px">
+<span class="card-icon" style="font-size:1rem"><i data-lucide="key-round" class="lucide-icon-lg"></i></span>
+<h3 style="margin-top:12px">Public Key Infrastructure</h3>
+<p style="margin-top:8px">Implementasi nyata dari <strong>PKI</strong> yang sudah dipelajari di Bab 4 RPS — digital signature & kriptografi asimetris sebagai fondasi.</p>
+<div class="tag-row" style="justify-content:center;margin-top:16px"><div class="tag">Kriptografi Asimetris</div><div class="tag">Verifiable Credential</div><div class="tag">Digital Signature</div></div>
+</div>
+<div class="compare-grid" style="margin-top:16px">
+<div class="compare-card before"><h4><i data-lucide="x-circle" class="lucide-icon-xs"></i> Sekarang (e-KTP)</h4><p style="font-size:0.88rem">Database terpusat di server Dukcapil. Kalau diretas atau orang dalam manipulasi — data berubah.</p></div>
+<div class="compare-card after"><h4><i data-lucide="check-circle" class="lucide-icon-xs"></i> Dengan Blockchain</h4><p style="font-size:0.88rem">Verifikasi tidak bergantung satu server. Verifiable credential memungkinkan verifikasi mandiri.</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 12: RECAP TABLE -->
+<div class="slide" data-section="B">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Segment B Recap</span>
+<h2 class="animate-in">Problems × <span class="gradient-text">Blockchain Mapping</span></h2>
+<div class="table-wrap animate-in delay-1">
+<table>
+<thead><tr><th>Indonesia's Problem</th><th>Blockchain Characteristics</th><th>Key Actors</th></tr></thead>
+<tbody>
+<tr><td><i data-lucide="home" class="lucide-icon-xs"></i> Sertifikat tanah ganda / mafia tanah</td><td><span class="badge">Immutability</span> <span class="badge">Distributed Ledger</span> <span class="badge">Timestamp</span></td><td>BPN, Notaris, Pemilik</td></tr>
+<tr><td><i data-lucide="hand-coins" class="lucide-icon-xs"></i> Bansos bocor / tidak tepat sasaran</td><td><span class="badge">Tokenization</span> <span class="badge">Smart Contract</span> <span class="badge">Audit Trail</span></td><td>Kemensos, Pemda, Bank, Penerima</td></tr>
+<tr><td><i data-lucide="package-search" class="lucide-icon-xs"></i> Rantai pasok pangan tidak transparan</td><td><span class="badge">Traceability</span> <span class="badge">Hash per Lot</span></td><td>Petani, Distributor, Retail, BPOM</td></tr>
+<tr><td><i data-lucide="file-warning" class="lucide-icon-xs"></i> Korupsi pengadaan pemerintah</td><td><span class="badge">Immutability</span> <span class="badge">Smart Contract</span> <span class="badge">Public Audit</span></td><td>LKPP, Vendor, Auditor, Publik</td></tr>
+<tr><td><i data-lucide="fingerprint" class="lucide-icon-xs"></i> Identitas & sertifikat palsu</td><td><span class="badge">Kriptografi Asimetris</span> <span class="badge">Verifiable Credential</span></td><td>Dukcapil, Universitas, Warga</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 13: BLOCKCHAIN VS DATABASE (NEW) -->
+<div class="slide" data-section="B">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Critical Thinking</span>
+<h2 class="animate-in">Blockchain vs <span class="gradient-text">Traditional Database</span></h2>
+<p class="subtitle animate-in delay-1">Blockchain bukan pengganti database — ini keputusan strategis berdasarkan kebutuhan.</p>
+<div class="table-wrap animate-in delay-2">
+<table>
+<thead><tr><th>Feature</th><th>Traditional Database</th><th>Blockchain</th></tr></thead>
+<tbody>
+<tr><td><strong>Control</strong></td><td>Centralized (single authority)</td><td>Decentralized (network consensus)</td></tr>
+<tr><td><strong>Data Operations</strong></td><td>Full CRUD (Create, Read, Update, Delete)</td><td>Append-only (immutable)</td></tr>
+<tr><td><strong>Trust Model</strong></td><td>Trust in administrator</td><td>Trust in protocol/consensus</td></tr>
+<tr><td><strong>Performance</strong></td><td>High throughput, low latency</td><td>Lower throughput, higher latency</td></tr>
+<tr><td><strong>Cost</strong></td><td>Standard infrastructure cost</td><td>Gas fees + higher storage cost</td></tr>
+<tr><td><strong>Best For</strong></td><td>Speed, complex queries, dynamic data</td><td>Transparency, auditability, multi-party trust</td></tr>
+</tbody>
+</table>
+</div>
+<div class="highlight-box animate-in delay-3"><h3><i data-lucide="info" class="lucide-icon-sm"></i> Hybrid Approach (2025 Trend)</h3><p>Banyak organisasi menggunakan <strong>model hybrid</strong>: database tradisional untuk operasional harian berkecepatan tinggi, blockchain untuk anchoring bukti kritis, hash, atau final settlement records.</p></div>
+</div>
+</div>
+
+<!-- SLIDE 14: REGULATION TIMELINE -->
+<div class="slide" data-section="C">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Segment C — Regulation</span>
+<h2 class="animate-in">From <span class="gradient-text">"Grey Area"</span> to Recognized</h2>
+<div class="two-col animate-in delay-1">
+<div>
+<div class="timeline">
+<div class="timeline-item"><h4>Before 2024</h4><p>Tidak ada regulasi yang eksplisit menyebut "blockchain" — hidup di grey area hukum</p></div>
+<div class="timeline-item"><h4>2024</h4><p>Regulasi hanya menyinggung aset kripto sebagai komoditi, tanpa mengatur teknologinya</p></div>
+<div class="timeline-item"><h4>10 January 2025</h4><p>Pengawasan kripto beralih dari Bappebti ke OJK — kripto jadi aset keuangan digital</p></div>
+<div class="timeline-item"><h4>5 June 2025</h4><p><strong>PP No. 28/2025</strong> ditandatangani — regulasi pertama yang menyebut blockchain secara eksplisit</p></div>
+</div>
+</div>
+<div>
+<div class="card" style="background:linear-gradient(135deg,rgba(139,92,246,0.12),rgba(99,102,241,0.06));border-color:rgba(139,92,246,0.25);text-align:center;padding:32px">
+<span class="card-icon"><i data-lucide="zap" class="lucide-icon-lg"></i></span>
+<h3 style="font-size:1.2rem">The Turning Point</h3>
+<p style="color:var(--text-primary);font-size:1rem;margin-top:12px">PP 28/2025 mengubah posisi hukum blockchain dari teknologi yang <strong>"ditoleransi"</strong> menjadi teknologi yang <strong>"diakui sebagai infrastruktur digital nasional"</strong></p>
+<p style="font-size:0.85rem;margin-top:12px;color:var(--accent-3)">Ditandatangani oleh Presiden Prabowo Subianto</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 15: PP 28/2025 -->
+<div class="slide" data-section="C">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>PP No. 28/2025</span>
+<h2 class="animate-in">Indonesia's First <span class="gradient-text">Blockchain Regulation</span></h2>
+<p class="subtitle animate-in delay-1">Peraturan Pemerintah tentang Perizinan Berusaha Berbasis Risiko (PBBR)</p>
+<div class="grid-2 animate-in delay-2">
+<div class="card"><span class="card-icon"><i data-lucide="file-text" class="lucide-icon"></i></span><h3>What It Covers</h3>
+<ul class="feature-list">
+<li>Pasal 186: blockchain sejajar dengan AI, identitas digital, sertifikat elektronik</li>
+<li>Blockchain diakui sebagai <strong>teknologi strategis nasional</strong></li>
+<li>Bagian dari <strong>infrastruktur digital nasional</strong></li>
+</ul></div>
+<div class="card"><span class="card-icon"><i data-lucide="badge-check" class="lucide-icon"></i></span><h3>Licensing Implications</h3>
+<ul class="feature-list">
+<li><strong>Non-financial</strong> (smart contract, Web3, NFT): cukup NIB + Sertifikat Standar</li>
+<li><strong>Financial</strong> (tokenisasi aset, trading kripto, DeFi): wajib izin OJK</li>
+<li>Proyek harus aktif minimal <strong>3 tahun</strong> — jika tidak, izin bisa dicabut</li>
+</ul></div>
+</div>
+<div class="quote-block animate-in delay-3">"Aturannya jelas, izin usaha disederhanakan, akses masuk ke sektor ini dipermudah. Banyak pengembang muda yang sebelumnya ragu — dengan PP ini, mereka punya dasar hukum yang konkret."<span class="quote-author">— Wakil Presiden Gibran Rakabuming</span></div>
+</div>
+</div>
+<!-- SLIDE 16: CRYPTO REGULATION & TAX -->
+<div class="slide" data-section="C">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Crypto Asset Regulation</span>
+<h2 class="animate-in">Oversight & <span class="gradient-text">Taxation Changes</span></h2>
+<div class="two-col animate-in delay-1">
+<div>
+<h3>Supervision Transition</h3>
+<div class="compare-grid" style="margin-top:12px">
+<div class="compare-card before"><h4><i data-lucide="x-circle" class="lucide-icon-xs"></i> Before</h4><p style="font-size:0.88rem"><strong>Bappebti</strong> — kripto = komoditi (seperti CPO, emas)</p></div>
+<div class="compare-card after"><h4><i data-lucide="check-circle" class="lucide-icon-xs"></i> Now (Jan 2025)</h4><p style="font-size:0.88rem"><strong>OJK</strong> — kripto = aset keuangan digital (setara surat berharga)</p></div>
+</div>
+<ul class="feature-list" style="margin-top:16px;font-size:0.92rem">
+<li>Perlindungan konsumen naik — OJK punya framework lebih kuat</li>
+<li>OJK Reg 27/2024 atur modal, kepemilikan asing, model bisnis</li>
+</ul>
+</div>
+<div>
+<h3>Crypto Tax — PMK 50/2025</h3>
+<p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:12px">Berlaku 1 Agustus 2025</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Old</th><th>New</th></tr></thead>
+<tbody>
+<tr><td>PPN transaksi</td><td>Dikenakan</td><td style="color:#4ade80"><strong>Bebas PPN</strong></td></tr>
+<tr><td>PPh exchange DN</td><td>0,1%</td><td>0,21% final</td></tr>
+<tr><td>PPh exchange LN</td><td>0,2%</td><td style="color:#f87171">5x lebih tinggi</td></tr>
+<tr><td>Status kripto</td><td>Komoditi</td><td style="color:#4ade80">Surat berharga</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 17: REGULATORY MAP -->
+<div class="slide" data-section="C">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Complete Regulatory Map</span>
+<h2 class="animate-in">Laws You <span class="gradient-text">Need to Know</span></h2>
+<div class="two-col animate-in delay-1">
+<div>
+<h3><i data-lucide="cpu" class="lucide-icon-sm"></i> Technology & Infrastructure</h3>
+<div class="card" style="margin-top:12px;padding:20px"><h3 style="font-size:0.95rem">PP No. 28/2025</h3><p style="font-size:0.85rem">Pengakuan resmi blockchain, perizinan usaha</p></div>
+<div class="card" style="margin-top:8px;padding:20px"><h3 style="font-size:0.95rem">UU No. 1/2024 (UU ITE)</h3><p style="font-size:0.85rem">Dasar hukum transaksi elektronik & kontrak digital — payung hukum smart contract</p></div>
+<div class="card" style="margin-top:8px;padding:20px"><h3 style="font-size:0.95rem">UU No. 27/2022 (UU PDP)</h3><p style="font-size:0.85rem">Perlindungan data pribadi — penting karena blockchain simpan data permanen</p></div>
+</div>
+<div>
+<h3><i data-lucide="trending-up" class="lucide-icon-sm"></i> Crypto & Digital Finance</h3>
+<div class="card" style="margin-top:12px;padding:20px"><h3 style="font-size:0.95rem">UU No. 4/2023 (P2SK)</h3><p style="font-size:0.85rem">Klasifikasi kripto sebagai aset keuangan digital</p></div>
+<div class="card" style="margin-top:8px;padding:20px"><h3 style="font-size:0.95rem">PP No. 49/2024</h3><p style="font-size:0.85rem">Peralihan pengawasan kripto Bappebti ke OJK</p></div>
+<div class="card" style="margin-top:8px;padding:20px"><h3 style="font-size:0.95rem">OJK Reg No. 27/2024</h3><p style="font-size:0.85rem">Modal, kepemilikan asing, model bisnis aset digital</p></div>
+<div class="card" style="margin-top:8px;padding:20px"><h3 style="font-size:0.95rem">PMK No. 50/2025</h3><p style="font-size:0.85rem">Perpajakan kripto terbaru (berlaku 1 Agustus 2025)</p></div>
+</div>
+</div>
+<div class="highlight-box animate-in delay-2"><h3><i data-lucide="alert-circle" class="lucide-icon-sm"></i> Key Point for Developers</h3><p>Apakah aplikasi kalian bersentuhan dengan <strong>aset keuangan</strong>? Kalau iya — regulasi OJK wajib dipatuhi. Kalau tidak (utility/tracking app) — PP 28/2025 memberi kebebasan jauh lebih besar.</p></div>
+</div>
+</div>
+
+<!-- SLIDE 18: PROJECT GARUDA & REAL ADOPTION (NEW) -->
+<div class="slide" data-section="C">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Indonesia's Active Projects</span>
+<h2 class="animate-in">Government <span class="gradient-text">Blockchain Initiatives</span></h2>
+<div class="grid-2 animate-in delay-1">
+<div class="card"><span class="card-icon"><i data-lucide="banknote" class="lucide-icon"></i></span><h3>Project Garuda — Digital Rupiah</h3><p>Bank Indonesia mengembangkan Digital Rupiah dengan model hybrid yang mengeksplorasi government-backed stablecoin yang di-anchor ke tokenized government bonds (SBN). Tujuan: mempertahankan kedaulatan moneter sambil memanfaatkan blockchain untuk transaksi interbank.</p></div>
+<div class="card"><span class="card-icon"><i data-lucide="id-card" class="lucide-icon"></i></span><h3>IDCHAIN — Digital Identity by PANDI</h3><p>PANDI (Pengelola Nama Domain Internet Indonesia) meluncurkan IDCHAIN — sistem identitas digital berbasis blockchain untuk meningkatkan perlindungan data pribadi dan mempermudah akses layanan publik.</p></div>
+<div class="card"><span class="card-icon"><i data-lucide="ship" class="lucide-icon"></i></span><h3>PT Pelindo — Logistics</h3><p>PT Pelabuhan Indonesia berhasil mengimplementasikan blockchain untuk monitoring logistik (kontainer & dokumentasi), menghasilkan <strong>pengurangan signifikan waktu administrasi dan risiko fraud</strong>.</p></div>
+<div class="card"><span class="card-icon"><i data-lucide="flame" class="lucide-icon"></i></span><h3>Ignit3 — Web3 Startup Program</h3><p>Program yang didukung pemerintah untuk memfasilitasi startup Web3 lokal melalui mentorship dan resources — membangun talent pool blockchain domestik Indonesia.</p></div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 19: BRAINSTORM + CHECKLIST -->
+<div class="slide" data-section="D">
+<div class="slide-inner">
+<span class="slide-label"><span class="dot"></span>Segment D — Workshop</span>
+<h2 class="animate-in">Brainstorm Your <span class="gradient-text">dApp Idea</span></h2>
+<div class="two-col animate-in delay-1">
+<div>
+<p class="subtitle">Bentuk kelompok 3–4 orang. Jawab pertanyaan berikut dalam 7 menit:</p>
+<div class="card" style="margin-top:16px"><span class="card-icon"><i data-lucide="help-circle" class="lucide-icon"></i></span><h3>Guiding Questions</h3>
+<ul class="feature-list">
+<li><strong>Masalah apa?</strong> — Yang paling kalian pahami / pedulikan</li>
+<li><strong>Karakteristik apa?</strong> — Immutability? Smart contract? Tokenization?</li>
+<li><strong>Siapa aktornya?</strong> — Node/user di sistem kalian</li>
+<li><strong>Data apa?</strong> — Apa yang di blockchain, apa yang TIDAK perlu</li>
+</ul></div>
+</div>
+<div>
+<h3>Blockchain Feasibility Checklist</h3>
+<ul class="check-list" style="margin-top:12px">
+<li>Ada lebih dari satu pihak yang <strong>tidak saling percaya</strong> penuh?</li>
+<li>Ada data kritis yang <strong>tidak boleh bisa diubah</strong>?</li>
+<li>Ada kebutuhan <strong>audit trail / transparansi</strong> publik?</li>
+<li><strong>Smart contract</strong> bisa encode aturan bisnis utama?</li>
+<li>Problem nyata — ada orang yang <strong>benar-benar rugi</strong> sekarang?</li>
+</ul>
+<div class="highlight-box" style="margin-top:20px;text-align:center">
+<h3 style="font-size:1.2rem;color:var(--text-primary)">3 centang atau lebih?</h3>
+<p style="font-size:1rem;color:var(--accent-3);margin-top:6px">Ide layak dieksplor lebih jauh sebagai proyek dApp</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- SLIDE 20: CLOSING -->
+<div class="slide title-slide" data-section="D">
+<div class="slide-inner">
+<span class="slide-label animate-in"><span class="dot"></span>Wrap-up</span>
+<h2 class="animate-in delay-1" style="font-size:clamp(1.8rem,3.5vw,2.5rem)">Three Key <span class="gradient-text">Takeaways</span></h2>
+<div class="grid-3 animate-in delay-2" style="text-align:left;margin-top:32px">
+<div class="card"><span class="card-icon"><i data-lucide="flag" class="lucide-icon"></i></span><h3>Structural Problems</h3><p>Indonesia punya masalah (tanah, bansos, supply chain, pengadaan, identitas) yang karakteristiknya sangat cocok untuk solusi blockchain</p></div>
+<div class="card"><span class="card-icon"><i data-lucide="scale" class="lucide-icon"></i></span><h3>Regulation Formed</h3><p>PP 28/2025 adalah milestone pertama — blockchain diakui sebagai infrastruktur digital nasional dengan kepastian hukum</p></div>
+<div class="card"><span class="card-icon"><i data-lucide="code" class="lucide-icon"></i></span><h3>Context = Code</h3><p>Memahami konteks masalah sama pentingnya dengan memahami teknologinya — kalian membangun solusi, bukan sekadar kode</p></div>
+</div>
+<div class="quote-block animate-in delay-3" style="text-align:center;border-left:none;max-width:700px;margin:32px auto 0">"Pertemuan berikutnya, bawa ide: masalah apa yang mau diselesaikan, siapa penggunanya, dan gambaran awal sistem blockchain-nya."</div>
+<div class="title-meta animate-in delay-4" style="margin-top:24px">
+<span>INF512 Blockchain Fundamentals</span>
+<div class="divider"></div>
+<span>Universitas Pembangunan Jaya</span>
+</div>
+</div>
+</div>
+
+</div><!-- end .presentation -->
+
+<!-- NAV -->
+<div class="nav-controls">
+<button class="nav-btn nav-prev" aria-label="Previous"><i data-lucide="chevron-left" class="lucide-icon-sm"></i></button>
+<span class="slide-counter">1 / 20</span>
+<button class="nav-btn nav-next" aria-label="Next"><i data-lucide="chevron-right" class="lucide-icon-sm"></i></button>
+</div>
+<div class="slide-index"></div>
+<div class="key-hint"><kbd>←</kbd> <kbd>→</kbd> atau swipe untuk navigasi</div>
+
+<script src="script.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>
