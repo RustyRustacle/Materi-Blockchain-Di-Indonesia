@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const progressBar = document.querySelector('.progress-bar');
   const counter = document.querySelector('.slide-counter');
   const indexContainer = document.querySelector('.slide-index');
+  const prevBtn = document.querySelector('.nav-prev');
+  const nextBtn = document.querySelector('.nav-next');
   const keyHint = document.querySelector('.key-hint');
 
   let current = 0;
@@ -96,6 +98,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }, { passive: true });
 
+  // Click nav
+  prevBtn.addEventListener('click', prev);
+  nextBtn.addEventListener('click', next);
 
   // Init
   buildDots();
